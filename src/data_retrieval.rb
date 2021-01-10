@@ -3,8 +3,8 @@
 require 'rubygems'
 require 'excon'
 
-def search()
-	dataSource = "https://www.reversewhois.io/?searchterm=minecraft.net"
+def search(searchTerm)
+	dataSource = "https://www.reversewhois.io/?searchterm=" + searchTerm
 
 	response = Excon.get(dataSource)
 	
