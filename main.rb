@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello World";
+require_relative './src/data_retrieval.rb'
+
+search()
